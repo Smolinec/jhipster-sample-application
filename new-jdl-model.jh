@@ -1,0 +1,64 @@
+
+entity Place {
+	id Long required
+	name String
+}
+
+entity Device{
+	id Long required
+	uuid String
+    appVersion String
+    idUpdated Boolean
+}
+
+relationship ManyToOne{
+	Device{place} to Place
+}
+
+entity Temperature{
+	id Long required
+	name String
+    address String
+    createTimestamp Date
+    lastUpdateTimestamp Date
+}
+
+relationship ManyToOne{
+	Temperature{device} to Device
+}
+
+entity Value{
+	id Long required
+	value Double
+    timestamp Date
+}
+
+relationship ManyToMany{
+	Value{temperature} to Temperature
+}
+
+entity User{
+	id Long required
+    firstName String
+    lastName String
+    email String
+    password String
+}
+
+relationship ManyToMany{
+	User{place} to Place
+}
+
+relationship ManyToOne{
+	Value{value} to Temperature
+}
+
+entity PushNotificationToken{
+	id Long required
+    token String
+    timestamp Date
+}
+
+relationship OneToMany{
+	User{pushNotificationToken} to PushNotificationToken
+}

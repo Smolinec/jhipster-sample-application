@@ -1,4 +1,5 @@
 import { IPushNotificationToken } from 'app/shared/model/push-notification-token.model';
+import { IRole } from 'app/shared/model/role.model';
 import { IPlace } from 'app/shared/model/place.model';
 
 export interface IWebUser {
@@ -8,6 +9,7 @@ export interface IWebUser {
   email?: string;
   password?: string;
   pushNotificationTokens?: IPushNotificationToken[];
+  roles?: IRole[];
   places?: IPlace[];
 }
 
@@ -19,6 +21,7 @@ export class WebUser implements IWebUser {
     public email?: string,
     public password?: string,
     public pushNotificationTokens?: IPushNotificationToken[],
+    public roles?: IRole[],
     public places?: IPlace[]
   ) {}
 }

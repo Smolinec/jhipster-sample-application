@@ -29,6 +29,14 @@
     },
     {
       "relationshipType": "many-to-many",
+      "otherEntityName": "role",
+      "otherEntityRelationshipName": "webUser",
+      "relationshipName": "role",
+      "otherEntityField": "id",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "many-to-many",
       "otherEntityName": "place",
       "otherEntityRelationshipName": "webUser",
       "relationshipName": "place",

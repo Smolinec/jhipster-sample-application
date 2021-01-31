@@ -49,6 +49,11 @@ public class WebUser implements Serializable {
     @ManyToMany(mappedBy = "webUsers")
     @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
     @JsonIgnore
+    private Set<Role> roles = new HashSet<>();
+
+    @ManyToMany(mappedBy = "webUsers")
+    @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+    @JsonIgnore
     private Set<Place> places = new HashSet<>();
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
@@ -135,6 +140,31 @@ public class WebUser implements Serializable {
 
     public void setPushNotificationTokens(Set<PushNotificationToken> pushNotificationTokens) {
         this.pushNotificationTokens = pushNotificationTokens;
+    }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public WebUser roles(Set<Role> roles) {
+        this.roles = roles;
+        return this;
+    }
+
+    public WebUser addRole(Role role) {
+        this.roles.add(role);
+        role.getWebUsers().add(this);
+        return this;
+    }
+
+    public WebUser removeRole(Role role) {
+        this.roles.remove(role);
+        role.getWebUsers().remove(this);
+        return this;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 
     public Set<Place> getPlaces() {

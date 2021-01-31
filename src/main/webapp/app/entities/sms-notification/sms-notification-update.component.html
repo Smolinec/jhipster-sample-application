@@ -1,0 +1,95 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-sms-notification-heading" jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.home.createOrEditLabel">Create or edit a SMS Notification</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.telNumber" for="field_telNumber">Tel Number</label>
+                    <input type="text" class="form-control" name="telNumber" id="field_telNumber"
+                           formControlName="telNumber"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.message" for="field_message">Message</label>
+                    <input type="text" class="form-control" name="message" id="field_message"
+                           formControlName="message"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.createdTimestamp" for="field_createdTimestamp">Created Timestamp</label>
+                    <div class="d-flex">
+                        <input id="field_createdTimestamp" type="datetime-local" class="form-control" name="createdTimestamp" formControlName="createdTimestamp" placeholder="YYYY-MM-DD HH:mm"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.uuidDevice" for="field_uuidDevice">Uuid Device</label>
+                    <input type="text" class="form-control" name="uuidDevice" id="field_uuidDevice"
+                           formControlName="uuidDevice"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.isSending" for="field_isSending">Is Sending</label>
+                    <input type="checkbox" class="form-control" name="isSending" id="field_isSending"
+                           formControlName="isSending"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.sendingTimestamp" for="field_sendingTimestamp">Sending Timestamp</label>
+                    <div class="d-flex">
+                        <input id="field_sendingTimestamp" type="datetime-local" class="form-control" name="sendingTimestamp" formControlName="sendingTimestamp" placeholder="YYYY-MM-DD HH:mm"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.isSend" for="field_isSend">Is Send</label>
+                    <input type="checkbox" class="form-control" name="isSend" id="field_isSend"
+                           formControlName="isSend"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.sendTimestamp" for="field_sendTimestamp">Send Timestamp</label>
+                    <div class="d-flex">
+                        <input id="field_sendTimestamp" type="datetime-local" class="form-control" name="sendTimestamp" formControlName="sendTimestamp" placeholder="YYYY-MM-DD HH:mm"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.alertType" for="field_alertType">Alert Type</label>
+                    <select class="form-control" name="alertType" formControlName="alertType" id="field_alertType">
+                        <option value="INFO">{{ 'jhipsterSampleApplicationApp.AlertType.INFO' | translate }}</option>
+                        <option value="WARN">{{ 'jhipsterSampleApplicationApp.AlertType.WARN' | translate }}</option>
+                        <option value="ERROR">{{ 'jhipsterSampleApplicationApp.AlertType.ERROR' | translate }}</option>
+                        <option value="DEBUG">{{ 'jhipsterSampleApplicationApp.AlertType.DEBUG' | translate }}</option>
+                        <option value="UNKNOWN">{{ 'jhipsterSampleApplicationApp.AlertType.UNKNOWN' | translate }}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.featureSend" for="field_featureSend">Feature Send</label>
+                    <div class="d-flex">
+                        <input id="field_featureSend" type="datetime-local" class="form-control" name="featureSend" formControlName="featureSend" placeholder="YYYY-MM-DD HH:mm"/>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

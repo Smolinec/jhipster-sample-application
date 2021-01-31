@@ -1,0 +1,29 @@
+{
+  "name": "DeviceConfiguration",
+  "fields": [
+    {
+      "fieldName": "primaryHostname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryHostname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "port",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210131214153",
+  "entityTableName": "device_configuration",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

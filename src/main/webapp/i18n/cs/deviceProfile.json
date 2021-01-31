@@ -1,0 +1,23 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "deviceProfile": {
+      "home": {
+        "title": "Device Profiles",
+        "createLabel": "Vytvořit Device Profile",
+        "createOrEditLabel": "Vytvořit nebo upravit Device Profile",
+        "search": "Vyhledat Device Profile",
+        "notFound": "No Device Profiles found"
+      },
+      "created": "Byl vytvořen potomek entity Device Profile s identifikátorem {{ param }}",
+      "updated": "Potomek entity Device Profile s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Device Profile s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Device Profile {{ id }}?"
+      },
+      "detail": {
+        "title": "Device Profile"
+      },
+      "device": "Device"
+    }
+  }
+}

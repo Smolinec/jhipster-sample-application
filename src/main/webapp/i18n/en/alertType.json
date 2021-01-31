@@ -1,0 +1,12 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "AlertType": {
+      "null": "",
+      "INFO": "Info",
+      "WARN": "Warn",
+      "ERROR": "Error",
+      "DEBUG": "Debug",
+      "UNKNOWN": "Unknown"
+    }
+  }
+}

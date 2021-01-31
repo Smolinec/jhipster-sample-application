@@ -1,0 +1,26 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "application": {
+      "home": {
+        "title": "Applications",
+        "createLabel": "Vytvořit Application",
+        "createOrEditLabel": "Vytvořit nebo upravit Application",
+        "search": "Vyhledat Application",
+        "notFound": "No Applications found"
+      },
+      "created": "Byl vytvořen potomek entity Application s identifikátorem {{ param }}",
+      "updated": "Potomek entity Application s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Application s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Application {{ id }}?"
+      },
+      "detail": {
+        "title": "Application"
+      },
+      "fileName": "File Name",
+      "data": "Data",
+      "version": "Version",
+      "timestamp": "Timestamp"
+    }
+  }
+}

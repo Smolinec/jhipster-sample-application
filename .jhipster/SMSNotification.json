@@ -1,0 +1,58 @@
+{
+  "name": "SMSNotification",
+  "fields": [
+    {
+      "fieldName": "telNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "message",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdTimestamp",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "uuidDevice",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isSending",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "sendingTimestamp",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "isSend",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "sendTimestamp",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "alertType",
+      "fieldType": "AlertType",
+      "fieldValues": "INFO (Info),WARN (Warn),ERROR (Error),DEBUG (Debug),UNKNOWN (Unknown)"
+    },
+    {
+      "fieldName": "featureSend",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210131214253",
+  "entityTableName": "sms_notification",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

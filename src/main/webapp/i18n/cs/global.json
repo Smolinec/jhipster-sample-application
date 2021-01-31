@@ -14,6 +14,11 @@
         "webUser": "Web User",
         "pushNotificationToken": "Push Notification Token",
         "values": "Values",
+        "role": "Role",
+        "application": "Application",
+        "deviceProfile": "Device Profile",
+        "deviceConfiguration": "Device Configuration",
+        "smsNotification": "SMS Notification",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

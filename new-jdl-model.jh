@@ -45,6 +45,15 @@ entity WebUser{
     password String
 }
 
+entity Role{
+	id Long required unique
+    name String
+}
+
+relationship ManyToMany{
+	Role{webUser} to WebUser{role}
+}
+
 relationship ManyToMany{
 	Place{webUser} to WebUser{place}
 }
@@ -61,4 +70,49 @@ entity PushNotificationToken{
 
 relationship ManyToMany{
 	WebUser{pushNotificationToken} to PushNotificationToken{webUser}
+}
+
+entity Application{
+	id Long required unique
+    fileName String
+    data Blob
+    version String
+    timestamp ZonedDateTime
+}
+
+entity DeviceProfile{
+	id Long required unique
+}
+
+relationship ManyToMany{
+	DeviceProfile{device} to Device{deviceProfile}
+}
+
+entity Configuration{
+	id Long required unique
+    primaryHostname String
+    secondaryHostname String
+    port Integer
+}
+
+entity SMSNotification{
+    id Long required unique
+    telNumber String
+    message String
+    createdTimestamp ZonedDateTime
+    uuidDevice String
+    isSending Boolean
+    sendingTimestamp ZonedDateTime
+    isSend Boolean
+    sendTimestamp ZonedDateTime
+    alertType AlertType
+    featureSend ZonedDateTime
+}
+
+enum AlertType{
+	INFO("Info")
+    WARN("Warn")
+    ERROR("Error")
+    DEBUG("Debug")
+    UNKNOWN("Unknown")
 }

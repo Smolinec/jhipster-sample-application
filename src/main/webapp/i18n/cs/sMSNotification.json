@@ -1,0 +1,32 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "sMSNotification": {
+      "home": {
+        "title": "SMS Notifications",
+        "createLabel": "Vytvořit SMS Notification",
+        "createOrEditLabel": "Vytvořit nebo upravit SMS Notification",
+        "search": "Vyhledat SMS Notification",
+        "notFound": "No SMS Notifications found"
+      },
+      "created": "Byl vytvořen potomek entity SMS Notification s identifikátorem {{ param }}",
+      "updated": "Potomek entity SMS Notification s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity SMS Notification s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat SMS Notification {{ id }}?"
+      },
+      "detail": {
+        "title": "SMS Notification"
+      },
+      "telNumber": "Tel Number",
+      "message": "Message",
+      "createdTimestamp": "Created Timestamp",
+      "uuidDevice": "Uuid Device",
+      "isSending": "Is Sending",
+      "sendingTimestamp": "Sending Timestamp",
+      "isSend": "Is Send",
+      "sendTimestamp": "Send Timestamp",
+      "alertType": "Alert Type",
+      "featureSend": "Feature Send"
+    }
+  }
+}

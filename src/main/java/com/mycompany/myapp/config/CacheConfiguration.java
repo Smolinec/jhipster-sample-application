@@ -62,6 +62,15 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.myapp.domain.PushNotificationToken.class.getName() + ".webUsers");
             createCache(cm, com.mycompany.myapp.domain.Values.class.getName());
             createCache(cm, com.mycompany.myapp.domain.Values.class.getName() + ".temperatures");
+            createCache(cm, com.mycompany.myapp.domain.Device.class.getName() + ".deviceProfiles");
+            createCache(cm, com.mycompany.myapp.domain.WebUser.class.getName() + ".roles");
+            createCache(cm, com.mycompany.myapp.domain.Role.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Role.class.getName() + ".webUsers");
+            createCache(cm, com.mycompany.myapp.domain.Application.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.DeviceProfile.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.DeviceProfile.class.getName() + ".devices");
+            createCache(cm, com.mycompany.myapp.domain.DeviceConfiguration.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.SMSNotification.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

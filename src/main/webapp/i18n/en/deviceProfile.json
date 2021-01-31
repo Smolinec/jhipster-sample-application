@@ -1,0 +1,23 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "deviceProfile": {
+      "home": {
+        "title": "Device Profiles",
+        "createLabel": "Create a new Device Profile",
+        "createOrEditLabel": "Create or edit a Device Profile",
+        "search": "Search for Device Profile",
+        "notFound": "No Device Profiles found"
+      },
+      "created": "A new Device Profile is created with identifier {{ param }}",
+      "updated": "A Device Profile is updated with identifier {{ param }}",
+      "deleted": "A Device Profile is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Device Profile {{ id }}?"
+      },
+      "detail": {
+        "title": "Device Profile"
+      },
+      "device": "Device"
+    }
+  }
+}

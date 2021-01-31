@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="deviceConfiguration">
+            <h2><span jhiTranslate="jhipsterSampleApplicationApp.deviceConfiguration.detail.title">Device Configuration</span> {{ deviceConfiguration.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.deviceConfiguration.primaryHostname">Primary Hostname</span></dt>
+                <dd>
+                    <span>{{ deviceConfiguration.primaryHostname }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.deviceConfiguration.secondaryHostname">Secondary Hostname</span></dt>
+                <dd>
+                    <span>{{ deviceConfiguration.secondaryHostname }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.deviceConfiguration.port">Port</span></dt>
+                <dd>
+                    <span>{{ deviceConfiguration.port }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/device-configuration', deviceConfiguration.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

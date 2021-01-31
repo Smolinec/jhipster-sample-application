@@ -62,6 +62,8 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.myapp.domain.WebUser.class.getName() + ".places");
             createCache(cm, com.mycompany.myapp.domain.PushNotificationToken.class.getName());
             createCache(cm, com.mycompany.myapp.domain.PushNotificationToken.class.getName() + ".webUsers");
+            createCache(cm, com.mycompany.myapp.domain.Values.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Values.class.getName() + ".temperatures");
             // jhipster-needle-ehcache-add-entry
         };
     }

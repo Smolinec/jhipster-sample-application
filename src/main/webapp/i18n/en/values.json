@@ -1,0 +1,26 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "values": {
+      "home": {
+        "title": "Values",
+        "createLabel": "Create a new Values",
+        "createOrEditLabel": "Create or edit a Values",
+        "search": "Search for Values",
+        "notFound": "No Values found"
+      },
+      "created": "A new Values is created with identifier {{ param }}",
+      "updated": "A Values is updated with identifier {{ param }}",
+      "deleted": "A Values is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Values {{ id }}?"
+      },
+      "detail": {
+        "title": "Values"
+      },
+      "value": "Value",
+      "timestamp": "Timestamp",
+      "temperature": "Temperature",
+      "temperature": "Temperature"
+    }
+  }
+}

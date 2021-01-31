@@ -1,6 +1,6 @@
 import { Moment } from 'moment';
 import { IDevice } from 'app/shared/model/device.model';
-import { IValue } from 'app/shared/model/value.model';
+import { IValues } from 'app/shared/model/values.model';
 
 export interface ITemperature {
   id?: number;
@@ -9,7 +9,7 @@ export interface ITemperature {
   createTimestamp?: Moment;
   lastUpdateTimestamp?: Moment;
   device?: IDevice;
-  values?: IValue[];
+  values?: IValues[];
 }
 
 export class Temperature implements ITemperature {
@@ -20,6 +20,6 @@ export class Temperature implements ITemperature {
     public createTimestamp?: Moment,
     public lastUpdateTimestamp?: Moment,
     public device?: IDevice,
-    public values?: IValue[]
+    public values?: IValues[]
   ) {}
 }

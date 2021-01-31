@@ -22,7 +22,7 @@
       "createTimestamp": "Create Timestamp",
       "lastUpdateTimestamp": "Last Update Timestamp",
       "device": "Device",
-      "value": "Value"
+      "values": "Values"
     }
   }
 }

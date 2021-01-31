@@ -1,5 +1,6 @@
 package com.mycompany.myapp.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
@@ -8,6 +9,8 @@ import javax.persistence.*;
 
 import org.springframework.data.elasticsearch.annotations.FieldType;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * A Device.
@@ -37,6 +40,11 @@ public class Device implements Serializable {
     @ManyToOne
     @JsonIgnoreProperties(value = "devices", allowSetters = true)
     private Place place;
+
+    @ManyToMany(mappedBy = "devices")
+    @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+    @JsonIgnore
+    private Set<DeviceProfile> deviceProfiles = new HashSet<>();
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
     public Long getId() {
@@ -97,6 +105,31 @@ public class Device implements Serializable {
 
     public void setPlace(Place place) {
         this.place = place;
+    }
+
+    public Set<DeviceProfile> getDeviceProfiles() {
+        return deviceProfiles;
+    }
+
+    public Device deviceProfiles(Set<DeviceProfile> deviceProfiles) {
+        this.deviceProfiles = deviceProfiles;
+        return this;
+    }
+
+    public Device addDeviceProfile(DeviceProfile deviceProfile) {
+        this.deviceProfiles.add(deviceProfile);
+        deviceProfile.getDevices().add(this);
+        return this;
+    }
+
+    public Device removeDeviceProfile(DeviceProfile deviceProfile) {
+        this.deviceProfiles.remove(deviceProfile);
+        deviceProfile.getDevices().remove(this);
+        return this;
+    }
+
+    public void setDeviceProfiles(Set<DeviceProfile> deviceProfiles) {
+        this.deviceProfiles = deviceProfiles;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
 

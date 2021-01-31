@@ -20,7 +20,8 @@
       "uuid": "Uuid",
       "appVersion": "App Version",
       "idUpdated": "Id Updated",
-      "place": "Place"
+      "place": "Place",
+      "deviceProfile": "Device Profile"
     }
   }
 }

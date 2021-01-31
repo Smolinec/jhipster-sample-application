@@ -21,6 +21,14 @@
       "otherEntityRelationshipName": "device",
       "relationshipName": "place",
       "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "deviceProfile",
+      "otherEntityRelationshipName": "device",
+      "relationshipName": "deviceProfile",
+      "otherEntityField": "id",
+      "ownerSide": false
     }
   ],
   "changelogDate": "20210131165802",

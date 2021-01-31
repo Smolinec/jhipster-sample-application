@@ -1,0 +1,66 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="sMSNotification">
+            <h2><span jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.detail.title">SMS Notification</span> {{ sMSNotification.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.telNumber">Tel Number</span></dt>
+                <dd>
+                    <span>{{ sMSNotification.telNumber }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.message">Message</span></dt>
+                <dd>
+                    <span>{{ sMSNotification.message }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.createdTimestamp">Created Timestamp</span></dt>
+                <dd>
+                    <span>{{ sMSNotification.createdTimestamp }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.uuidDevice">Uuid Device</span></dt>
+                <dd>
+                    <span>{{ sMSNotification.uuidDevice }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.isSending">Is Sending</span></dt>
+                <dd>
+                    <span>{{ sMSNotification.isSending }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.sendingTimestamp">Sending Timestamp</span></dt>
+                <dd>
+                    <span>{{ sMSNotification.sendingTimestamp }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.isSend">Is Send</span></dt>
+                <dd>
+                    <span>{{ sMSNotification.isSend }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.sendTimestamp">Send Timestamp</span></dt>
+                <dd>
+                    <span>{{ sMSNotification.sendTimestamp }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.alertType">Alert Type</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'jhipsterSampleApplicationApp.AlertType.' + sMSNotification.alertType }}">{{ sMSNotification.alertType }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.sMSNotification.featureSend">Feature Send</span></dt>
+                <dd>
+                    <span>{{ sMSNotification.featureSend }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/sms-notification', sMSNotification.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

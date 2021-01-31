@@ -35,6 +35,28 @@ import { RouterModule } from '@angular/router';
         path: 'values',
         loadChildren: () => import('./values/values.module').then(m => m.JhipsterSampleApplicationValuesModule),
       },
+      {
+        path: 'role',
+        loadChildren: () => import('./role/role.module').then(m => m.JhipsterSampleApplicationRoleModule),
+      },
+      {
+        path: 'application',
+        loadChildren: () => import('./application/application.module').then(m => m.JhipsterSampleApplicationApplicationModule),
+      },
+      {
+        path: 'device-profile',
+        loadChildren: () => import('./device-profile/device-profile.module').then(m => m.JhipsterSampleApplicationDeviceProfileModule),
+      },
+      {
+        path: 'device-configuration',
+        loadChildren: () =>
+          import('./device-configuration/device-configuration.module').then(m => m.JhipsterSampleApplicationDeviceConfigurationModule),
+      },
+      {
+        path: 'sms-notification',
+        loadChildren: () =>
+          import('./sms-notification/sms-notification.module').then(m => m.JhipsterSampleApplicationSMSNotificationModule),
+      },
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ]),
   ],

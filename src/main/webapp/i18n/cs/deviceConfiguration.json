@@ -1,0 +1,25 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "deviceConfiguration": {
+      "home": {
+        "title": "Device Configurations",
+        "createLabel": "Vytvořit Device Configuration",
+        "createOrEditLabel": "Vytvořit nebo upravit Device Configuration",
+        "search": "Vyhledat Device Configuration",
+        "notFound": "No Device Configurations found"
+      },
+      "created": "Byl vytvořen potomek entity Device Configuration s identifikátorem {{ param }}",
+      "updated": "Potomek entity Device Configuration s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Device Configuration s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Device Configuration {{ id }}?"
+      },
+      "detail": {
+        "title": "Device Configuration"
+      },
+      "primaryHostname": "Primary Hostname",
+      "secondaryHostname": "Secondary Hostname",
+      "port": "Port"
+    }
+  }
+}

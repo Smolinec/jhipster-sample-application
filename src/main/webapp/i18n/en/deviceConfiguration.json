@@ -1,0 +1,25 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "deviceConfiguration": {
+      "home": {
+        "title": "Device Configurations",
+        "createLabel": "Create a new Device Configuration",
+        "createOrEditLabel": "Create or edit a Device Configuration",
+        "search": "Search for Device Configuration",
+        "notFound": "No Device Configurations found"
+      },
+      "created": "A new Device Configuration is created with identifier {{ param }}",
+      "updated": "A Device Configuration is updated with identifier {{ param }}",
+      "deleted": "A Device Configuration is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Device Configuration {{ id }}?"
+      },
+      "detail": {
+        "title": "Device Configuration"
+      },
+      "primaryHostname": "Primary Hostname",
+      "secondaryHostname": "Secondary Hostname",
+      "port": "Port"
+    }
+  }
+}

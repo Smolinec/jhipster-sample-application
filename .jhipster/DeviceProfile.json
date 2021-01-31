@@ -1,0 +1,25 @@
+{
+  "name": "DeviceProfile",
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "device",
+      "otherEntityRelationshipName": "deviceProfile",
+      "relationshipName": "device",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20210131214053",
+  "entityTableName": "device_profile",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

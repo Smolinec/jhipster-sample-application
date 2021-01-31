@@ -1,0 +1,45 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="application">
+            <h2><span jhiTranslate="jhipsterSampleApplicationApp.application.detail.title">Application</span> {{ application.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.application.fileName">File Name</span></dt>
+                <dd>
+                    <span>{{ application.fileName }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.application.data">Data</span></dt>
+                <dd>
+                    <div *ngIf="application.data">
+                        <a (click)="openFile(application.dataContentType, application.data)" jhiTranslate="entity.action.open">open</a>
+                        {{ application.dataContentType }}, {{ byteSize(application.data) }}
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.application.version">Version</span></dt>
+                <dd>
+                    <span>{{ application.version }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.application.timestamp">Timestamp</span></dt>
+                <dd>
+                    <span>{{ application.timestamp }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/application', application.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

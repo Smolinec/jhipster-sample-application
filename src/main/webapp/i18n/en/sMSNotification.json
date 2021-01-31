@@ -1,0 +1,32 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "sMSNotification": {
+      "home": {
+        "title": "SMS Notifications",
+        "createLabel": "Create a new SMS Notification",
+        "createOrEditLabel": "Create or edit a SMS Notification",
+        "search": "Search for SMS Notification",
+        "notFound": "No SMS Notifications found"
+      },
+      "created": "A new SMS Notification is created with identifier {{ param }}",
+      "updated": "A SMS Notification is updated with identifier {{ param }}",
+      "deleted": "A SMS Notification is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete SMS Notification {{ id }}?"
+      },
+      "detail": {
+        "title": "SMS Notification"
+      },
+      "telNumber": "Tel Number",
+      "message": "Message",
+      "createdTimestamp": "Created Timestamp",
+      "uuidDevice": "Uuid Device",
+      "isSending": "Is Sending",
+      "sendingTimestamp": "Sending Timestamp",
+      "isSend": "Is Send",
+      "sendTimestamp": "Send Timestamp",
+      "alertType": "Alert Type",
+      "featureSend": "Feature Send"
+    }
+  }
+}

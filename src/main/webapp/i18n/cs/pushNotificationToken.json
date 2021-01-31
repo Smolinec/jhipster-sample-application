@@ -1,0 +1,25 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "pushNotificationToken": {
+      "home": {
+        "title": "Push Notification Tokens",
+        "createLabel": "Vytvořit Push Notification Token",
+        "createOrEditLabel": "Vytvořit nebo upravit Push Notification Token",
+        "search": "Vyhledat Push Notification Token",
+        "notFound": "No Push Notification Tokens found"
+      },
+      "created": "Byl vytvořen potomek entity Push Notification Token s identifikátorem {{ param }}",
+      "updated": "Potomek entity Push Notification Token s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Push Notification Token s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Push Notification Token {{ id }}?"
+      },
+      "detail": {
+        "title": "Push Notification Token"
+      },
+      "token": "Token",
+      "timestamp": "Timestamp",
+      "webUser": "Web User"
+    }
+  }
+}

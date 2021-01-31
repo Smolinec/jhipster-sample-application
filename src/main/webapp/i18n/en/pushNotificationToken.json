@@ -1,0 +1,25 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "pushNotificationToken": {
+      "home": {
+        "title": "Push Notification Tokens",
+        "createLabel": "Create a new Push Notification Token",
+        "createOrEditLabel": "Create or edit a Push Notification Token",
+        "search": "Search for Push Notification Token",
+        "notFound": "No Push Notification Tokens found"
+      },
+      "created": "A new Push Notification Token is created with identifier {{ param }}",
+      "updated": "A Push Notification Token is updated with identifier {{ param }}",
+      "deleted": "A Push Notification Token is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Push Notification Token {{ id }}?"
+      },
+      "detail": {
+        "title": "Push Notification Token"
+      },
+      "token": "Token",
+      "timestamp": "Timestamp",
+      "webUser": "Web User"
+    }
+  }
+}

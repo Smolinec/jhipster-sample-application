@@ -1,0 +1,28 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "temperature": {
+      "home": {
+        "title": "Temperatures",
+        "createLabel": "Vytvořit Temperature",
+        "createOrEditLabel": "Vytvořit nebo upravit Temperature",
+        "search": "Vyhledat Temperature",
+        "notFound": "No Temperatures found"
+      },
+      "created": "Byl vytvořen potomek entity Temperature s identifikátorem {{ param }}",
+      "updated": "Potomek entity Temperature s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Temperature s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Temperature {{ id }}?"
+      },
+      "detail": {
+        "title": "Temperature"
+      },
+      "name": "Name",
+      "address": "Address",
+      "createTimestamp": "Create Timestamp",
+      "lastUpdateTimestamp": "Last Update Timestamp",
+      "device": "Device",
+      "value": "Value"
+    }
+  }
+}

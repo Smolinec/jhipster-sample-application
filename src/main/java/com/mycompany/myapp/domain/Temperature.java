@@ -48,7 +48,7 @@ public class Temperature implements Serializable {
     @ManyToMany(mappedBy = "temperatures")
     @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
     @JsonIgnore
-    private Set<Value> values = new HashSet<>();
+    private Set<Values> values = new HashSet<>();
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
     public Long getId() {
@@ -124,28 +124,28 @@ public class Temperature implements Serializable {
         this.device = device;
     }
 
-    public Set<Value> getValues() {
+    public Set<Values> getValues() {
         return values;
     }
 
-    public Temperature values(Set<Value> values) {
+    public Temperature values(Set<Values> values) {
         this.values = values;
         return this;
     }
 
-    public Temperature addValue(Value value) {
-        this.values.add(value);
-        value.getTemperatures().add(this);
+    public Temperature addValues(Values values) {
+        this.values.add(values);
+        values.getTemperatures().add(this);
         return this;
     }
 
-    public Temperature removeValue(Value value) {
-        this.values.remove(value);
-        value.getTemperatures().remove(this);
+    public Temperature removeValues(Values values) {
+        this.values.remove(values);
+        values.getTemperatures().remove(this);
         return this;
     }
 
-    public void setValues(Set<Value> values) {
+    public void setValues(Set<Values> values) {
         this.values = values;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here

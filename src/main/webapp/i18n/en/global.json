@@ -13,6 +13,7 @@
         "value": "Value",
         "webUser": "Web User",
         "pushNotificationToken": "Push Notification Token",
+        "values": "Values",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

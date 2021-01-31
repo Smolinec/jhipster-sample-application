@@ -28,9 +28,9 @@
     },
     {
       "relationshipType": "many-to-many",
-      "otherEntityName": "value",
+      "otherEntityName": "values",
       "otherEntityRelationshipName": "temperature",
-      "relationshipName": "value",
+      "relationshipName": "values",
       "otherEntityField": "id",
       "ownerSide": false
     }

@@ -20,12 +20,14 @@
     <include file="config/liquibase/changelog/20210131170002_added_entity_Value.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210131170102_added_entity_WebUser.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210131170202_added_entity_PushNotificationToken.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210131182737_added_entity_Values.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="config/liquibase/changelog/20210131165702_added_entity_constraints_Place.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210131165802_added_entity_constraints_Device.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210131165902_added_entity_constraints_Temperature.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210131170002_added_entity_constraints_Value.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210131170102_added_entity_constraints_WebUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210131182737_added_entity_constraints_Values.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

@@ -1,0 +1,26 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "values": {
+      "home": {
+        "title": "Values",
+        "createLabel": "Vytvořit Values",
+        "createOrEditLabel": "Vytvořit nebo upravit Values",
+        "search": "Vyhledat Values",
+        "notFound": "No Values found"
+      },
+      "created": "Byl vytvořen potomek entity Values s identifikátorem {{ param }}",
+      "updated": "Potomek entity Values s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Values s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Values {{ id }}?"
+      },
+      "detail": {
+        "title": "Values"
+      },
+      "value": "Value",
+      "timestamp": "Timestamp",
+      "temperature": "Temperature",
+      "temperature": "Temperature"
+    }
+  }
+}

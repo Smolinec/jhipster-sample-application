@@ -31,6 +31,10 @@ import { RouterModule } from '@angular/router';
             m => m.JhipsterSampleApplicationPushNotificationTokenModule
           ),
       },
+      {
+        path: 'values',
+        loadChildren: () => import('./values/values.module').then(m => m.JhipsterSampleApplicationValuesModule),
+      },
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ]),
   ],

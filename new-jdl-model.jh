@@ -27,14 +27,14 @@ relationship ManyToOne{
 	Temperature{device} to Device
 }
 
-entity Value{
+entity Values{
 	id Long required unique
 	value Double
     timestamp ZonedDateTime
 }
 
 relationship ManyToMany{
-	Value{temperature} to Temperature{value}
+	Values{temperature} to Temperature{values}
 }
 
 entity WebUser{
@@ -50,7 +50,7 @@ relationship ManyToMany{
 }
 
 relationship ManyToOne{
-	Value{temperature} to Temperature
+	Values{temperature} to Temperature
 }
 
 entity PushNotificationToken{

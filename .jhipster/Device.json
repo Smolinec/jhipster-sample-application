@@ -1,0 +1,37 @@
+{
+  "name": "Device",
+  "fields": [
+    {
+      "fieldName": "uuid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "appVersion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idUpdated",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "place",
+      "otherEntityRelationshipName": "device",
+      "relationshipName": "place",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210131165802",
+  "entityTableName": "device",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

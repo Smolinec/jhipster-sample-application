@@ -1,0 +1,28 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "webUser": {
+      "home": {
+        "title": "Web Users",
+        "createLabel": "Vytvořit Web User",
+        "createOrEditLabel": "Vytvořit nebo upravit Web User",
+        "search": "Vyhledat Web User",
+        "notFound": "No Web Users found"
+      },
+      "created": "Byl vytvořen potomek entity Web User s identifikátorem {{ param }}",
+      "updated": "Potomek entity Web User s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Web User s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Web User {{ id }}?"
+      },
+      "detail": {
+        "title": "Web User"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "password": "Password",
+      "pushNotificationToken": "Push Notification Token",
+      "place": "Place"
+    }
+  }
+}

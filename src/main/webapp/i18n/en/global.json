@@ -7,6 +7,12 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "place": "Place",
+        "device": "Device",
+        "temperature": "Temperature",
+        "value": "Value",
+        "webUser": "Web User",
+        "pushNotificationToken": "Push Notification Token",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

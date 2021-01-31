@@ -1,0 +1,28 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "webUser": {
+      "home": {
+        "title": "Web Users",
+        "createLabel": "Create a new Web User",
+        "createOrEditLabel": "Create or edit a Web User",
+        "search": "Search for Web User",
+        "notFound": "No Web Users found"
+      },
+      "created": "A new Web User is created with identifier {{ param }}",
+      "updated": "A Web User is updated with identifier {{ param }}",
+      "deleted": "A Web User is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Web User {{ id }}?"
+      },
+      "detail": {
+        "title": "Web User"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "password": "Password",
+      "pushNotificationToken": "Push Notification Token",
+      "place": "Place"
+    }
+  }
+}

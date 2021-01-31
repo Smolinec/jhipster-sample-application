@@ -1,0 +1,44 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="device">
+            <h2><span jhiTranslate="jhipsterSampleApplicationApp.device.detail.title">Device</span> {{ device.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.device.uuid">Uuid</span></dt>
+                <dd>
+                    <span>{{ device.uuid }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.device.appVersion">App Version</span></dt>
+                <dd>
+                    <span>{{ device.appVersion }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.device.idUpdated">Id Updated</span></dt>
+                <dd>
+                    <span>{{ device.idUpdated }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.device.place">Place</span></dt>
+                <dd>
+                    <div *ngIf="device.place">
+                        <a [routerLink]="['/place', device.place?.id, 'view']">{{ device.place?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/device', device.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

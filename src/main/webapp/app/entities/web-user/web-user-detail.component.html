@@ -1,0 +1,48 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="webUser">
+            <h2><span jhiTranslate="jhipsterSampleApplicationApp.webUser.detail.title">Web User</span> {{ webUser.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.webUser.firstName">First Name</span></dt>
+                <dd>
+                    <span>{{ webUser.firstName }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.webUser.lastName">Last Name</span></dt>
+                <dd>
+                    <span>{{ webUser.lastName }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.webUser.email">Email</span></dt>
+                <dd>
+                    <span>{{ webUser.email }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.webUser.password">Password</span></dt>
+                <dd>
+                    <span>{{ webUser.password }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterSampleApplicationApp.webUser.pushNotificationToken">Push Notification Token</span></dt>
+                <dd>
+                    <span *ngFor="let pushNotificationToken of webUser.pushNotificationTokens; let last = last">
+                        <a [routerLink]="['/push-notification-token', pushNotificationToken?.id, 'view']">{{ pushNotificationToken.id }}</a>{{ last ? '' : ', ' }}
+                    </span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/web-user', webUser.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "device": {
+      "home": {
+        "title": "Devices",
+        "createLabel": "Vytvořit Device",
+        "createOrEditLabel": "Vytvořit nebo upravit Device",
+        "search": "Vyhledat Device",
+        "notFound": "No Devices found"
+      },
+      "created": "Byl vytvořen potomek entity Device s identifikátorem {{ param }}",
+      "updated": "Potomek entity Device s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Device s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Device {{ id }}?"
+      },
+      "detail": {
+        "title": "Device"
+      },
+      "uuid": "Uuid",
+      "appVersion": "App Version",
+      "idUpdated": "Id Updated",
+      "place": "Place"
+    }
+  }
+}

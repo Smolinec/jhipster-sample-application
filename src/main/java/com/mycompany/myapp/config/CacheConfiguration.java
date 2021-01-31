@@ -50,6 +50,18 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.myapp.domain.User.class.getName());
             createCache(cm, com.mycompany.myapp.domain.Authority.class.getName());
             createCache(cm, com.mycompany.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.mycompany.myapp.domain.Place.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Place.class.getName() + ".webUsers");
+            createCache(cm, com.mycompany.myapp.domain.Device.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Temperature.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Temperature.class.getName() + ".values");
+            createCache(cm, com.mycompany.myapp.domain.Value.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Value.class.getName() + ".temperatures");
+            createCache(cm, com.mycompany.myapp.domain.WebUser.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.WebUser.class.getName() + ".pushNotificationTokens");
+            createCache(cm, com.mycompany.myapp.domain.WebUser.class.getName() + ".places");
+            createCache(cm, com.mycompany.myapp.domain.PushNotificationToken.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.PushNotificationToken.class.getName() + ".webUsers");
             // jhipster-needle-ehcache-add-entry
         };
     }

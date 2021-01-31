@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity WebUser.
+    -->
+    <changeSet id="20210131170102-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="web_user_id"
+                                 baseTableName="web_user_push_notification_token"
+                                 constraintName="fk_web_user_push_notification_token_web_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="web_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="push_notification_token_id"
+                                 baseTableName="web_user_push_notification_token"
+                                 constraintName="fk_web_user_push_notification_token_push_notification_token_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="push_notification_token"/>
+        
+    </changeSet>
+</databaseChangeLog>
